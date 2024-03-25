@@ -1,512 +1,573 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodies</title>
-    <link rel="stylesheet" href="2.css">
-    <link rel="stylesheet" href="respon2.css">
-    <script src="2.js"></script>
-    <link rel="stylesheet" href="../Bootstrap/fontawesome-free-6.4.0-web/css/all.min.css">
-    <!-- JQURTY CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- BOOTSTRAP ICON CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <!-- BOOTSTAP 5 CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodies</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- BOOTSTRAP ICON CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- BOOTSTAP 5 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JQURTY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="app.js"></script>
 </head>
+
 <body>
-    <!-- header design -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light navigation-wrap fixed-top">
-          <div class="container">
-            <a class="navbar-brand text-danger" href="2.html"><h3>Food</h3></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
-              <span class="navbar-toggler-icon"></span>Menu
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-danger" >
-                <li class="nav-item active">
-                  <a class="nav-link text-danger " aria-current="page" href="2.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-danger" href="#aboutus">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-danger" href="#explorefood">Explore Foods</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-danger" href="#testtimonial">Reviews</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-danger" href="#faq">FAQ</a>
-                </li>
-                <li><button class="btn btn-danger mx-lg-2">1200 345 123</button></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light navigation-wrap fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-danger" href="">
+          <h3>Foodies</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-danger">
+            <li class="nav-item ">
+              <a class="nav-link text-danger " href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#explorefood">Explore Foods</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#faq">FAQ</a>
+            </li>
+            <li><button class="btn btn-danger mx-lg-2">1200 345 123</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-    <!-- section-1 top banner -->
-    <section>
-        <div class="container section1">
-            <div class="d-sm-flex align-content justify-content-between ">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mt-xl-5 mt-lg-5 col-md-12">
-                        <h1 class="mt-5">Good food choices are good investments.</h1>
-                        <p class="lead my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etian et purus a odio finibbus bibendum amet leo.
-                        </p>
-                        <button class="btn btn-primary btn-sm btn-danger">Oder Now <i class="bi bi-bag-plus"></i></button>
-                        <button class="btn btn-primary btn-sm btn-dark">Details <i class="bi bi-arrow-right"></i></button>
-                    </div>
-                    <div class="col-xl-8 col-lg-8 col-md-12">
-                        <img class="img-fluid mt-md-5 mt-sm-5 float-lg-end " style="width: 900px;height: 500px;" src="https://imgs.search.brave.com/-ssG6XoggPo3p7inyG9JZwNyBPfZ9To2ev7mLErUSQg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/ZmxhdGxheS1pcm9u/LXNraWxsZXQtd2l0/aC1tZWF0LWFuZC1v/dGhlci1mb29kLmpw/Zz93aWR0aD0xMDAw/JmZvcm1hdD1wanBn/JmV4aWY9MCZpcHRj/PTA" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section-2 counter -->
-    <section id="counter">
-      <section class="counter-section mt-2">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-              <h2>
-                <span id="count1"></span>+
-              </h2>
-              <p>SAVING</p>
-            </div>
-            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-              <h2>
-                <span id="count2"></span>+
-              </h2>
-              <p>PHOTOS</p>
-            </div>
-            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-              <h2>
-                <span id="count3"></span>+
-              </h2>
-              <p>ROCKETS</p>
-            </div>
-            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-              <h2>
-                <span id="count4"></span>+
-              </h2>
-              <p>BLOBES</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- section-3 about -->
-    <section id="aboutus">
-      <div class="container mt-2 mb-2">
+  <!-- banner -->
+  <section>
+    <div class="container section1">
+      <div class="d-sm-flex align-content justify-content-between ">
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <img src="https://imgs.search.brave.com/2jyXoya-fT0S5N_FXhXfRtPpXev9lAVqDEB9GF6N72U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA4/ODc4NjQ0L3Bob3Rv/L21lYXQtcGlsYWYu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXNYUHBVblRvV0Fj/TS1HdEpFMmhvWVIz/S085ZUJyTVZDNXMt/SWhfSDR1czg9" class="img-fluid d-flex mx-auto " alt="">
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-xl-5 p-lg-5">
-            <h3 class="text-danger mt-md-3 mt-sm-3">We Pride Ourselves On Making Real Food from the Best indredients.</h3>
-            <p class="text-black">
-              Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.
+          <div class="col-xl-4 col-lg-4 mt-xl-5 mt-lg-5 col-md-12">
+            <h1 class="mt-5">Good food choices are good investments.</h1>
+            <p class="lead my-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etian et purus a odio finibbus bibendum amet
+              leo.
             </p>
-            <a href="#" class="btn btn-danger text-white"> Detail <i class="bi bi-arrow-right"></i></a>
+            <button class="btn btn-primary  btn-danger">Oder Now <i class="bi bi-bag-plus"></i></button>
+            <button class="btn btn-primary  btn-dark">Details <i class="bi bi-arrow-right"></i></button>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-12">
+            <img class="img-fluid mt-md-5 mt-sm-5 mt-3 float-lg-end " style="width: 900px;height: 500px;"
+              src="https://imgs.search.brave.com/-ssG6XoggPo3p7inyG9JZwNyBPfZ9To2ev7mLErUSQg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/ZmxhdGxheS1pcm9u/LXNraWxsZXQtd2l0/aC1tZWF0LWFuZC1v/dGhlci1mb29kLmpw/Zz93aWR0aD0xMDAw/JmZvcm1hdD1wanBn/JmV4aWY9MCZpcHRj/PTA"
+              alt="">
           </div>
         </div>
       </div>
-    </section>
-
-    <section>
-      <div class="container mt-2 mt-md-5 mb-5">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-xl-5 p-lg-5">
-            <h3 class="text-danger mt-md-3 mt-sm-3">We Make Everyhing by Hand With The Best Possible</h3>
-            <p class="text-black">
-              Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.
-              Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.
-            </p>
-            <div><i class="bi bi-check2 text-danger"></i> Etiam sec dolor ac diam volutpat</div>
-            <div><i class="bi bi-check2 text-danger"></i> Etiam sec dolor ac diam volutpat</div>
-            <div><i class="bi bi-check2 text-danger"></i> Etiam sec dolor ac diam volutpat</div>
-            <a href="#" class="btn btn-danger text-white mt-3"> Detail <i class="bi bi-arrow-right"></i></a>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5">
-            <img src="https://imgs.search.brave.com/2jyXoya-fT0S5N_FXhXfRtPpXev9lAVqDEB9GF6N72U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA4/ODc4NjQ0L3Bob3Rv/L21lYXQtcGlsYWYu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXNYUHBVblRvV0Fj/TS1HdEpFMmhvWVIz/S085ZUJyTVZDNXMt/SWhfSDR1czg9" class="img-fluid d-flex mx-auto  " alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- section-4 story -->
-    <section id="story">
-      <div class="container">
-        <div class="row text-center mt-5">
-          <div class="col-12 mt-xl-5 mt-lg-5 mt-md-0 ">
-            <h1 class="text-danger mt-5">When A Man's Stomach Is Full It Makes No Difference Whether He is Rich Or Poor.</h1>
-          <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
-          <a href="#" class="btn btn-danger text-white btn-lg">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- section-5 explorefood -->
-    <section id="explorefood">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 mt-5 text-center">
-            <h2 class="text-danger">Explore Our Foods</h2>
-            <p class="lead">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.
-              Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo.
-              Etiam sec dolor ac diam volutpat
-            </p>
-          </div>
-        </div>
-        <!-- order -->
-        <div class="row mt-3 g-4">
-          <!-- Item 1 -->
-          <div class="col-md-6 col-lg-3 mb-3 ">
-            <div class="card bg-light h-100">
-              <img class="mb-3 card-img card-img-top" src="https://imgs.search.brave.com/esOuKmCf1nEOBvYDU8La4sf5fDawdBFpndaXSdSoExA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/NDMwMjQ2L3Bob3Rv/L2hhbS1hbmQtY2hl/ZXNlLXNhbmR3aWNo/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1kZWFodlRMdlNF/SGk2YUQtSG9Bd3NP/RDZQcXdtX0g4QzRv/NjhITHRrOFJVPQ" alt="">
-              <div class="card-body h-100 d-flex flex-column">
-                <h4 class="card-title">
-                  ham and cheese sandwich
-                </h4>
-                <p>Time 15 - 20 Minutes | Serves : 1</p>
-                <p class="card-text flex-grow-1">
-                  <span class="text-danger">
-                    $10.50 <strike class="text-dark">$11.70</strike>
-                  </span>
-                </p>
-                <div class="text-start">
-                  <a href="#" class="btn btn-outline-danger btnOrder">Order Now</a> 
-                </div>                  
-              </div>
-            </div>
-          </div>
-          <!-- Item 2 -->
-          <div class="col-md-6 col-lg-3 mb-3 ">
-            <div class="card bg-light h-100">
-              <img class="mb-3 card-img card-img-top" src="https://imgs.search.brave.com/lCZ6XOnQs9yDUAw6-eK4OwiQ6elTuJbCJ5wP1V4LPLs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/NTE0Nzg4NS9waG90/by9pdGFsaWFuLXNh/bmR3aWNoLWZvci1s/dW5jaC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9TzlDS2M4/QjljQ0EwelhPRE9Z/V0Y5WF9EMnFSWU8w/MjdxQTNrT2xCblEz/dz0" alt="">
-              <div class="card-body h-100 d-flex flex-column">
-                <h4 class="card-title">
-                  Italian sandwich
-                </h4>
-                <p>Time 15 - 20 Minutes | Serves : 1</p>
-                <p class="card-text flex-grow-1">
-                  <span class="text-danger">
-                    $10.50 <strike class="text-dark">$11.70</strike>
-                  </span>
-                </p>
-                <div class="text-start">
-                  <a href="#" class="btn btn-outline-danger ">Order Now</a> 
-                </div>                  
-              </div>
-            </div>
-          </div>
-          <!-- Itme 3 -->
-          <div class="col-md-6 col-lg-3 mb-3 ">
-            <div class="card bg-light h-100">
-              <img class="mb-3 card-img card-img-top" src="https://imgs.search.brave.com/mVbTrN7oZFchpDpU0tljO-r-AT5zI9Vb9l16HswoW4o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODA1/NzExNzcyL3Bob3Rv/L2ZyZXNoLXN1Ym1h/cmluZS1zYW5kd2lj/aC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9eW1GQkhDSEdn/TURZbHFYRDA3WEwt/dTdRaFZfb1N4d3V3/LVRYZldLRWpXaz0" alt="">
-              <div class="card-body h-100 d-flex flex-column">
-                <h4 class="card-title">
-                  fresh submarine sandwich
-                </h4>
-                <p>Time 15 - 20 Minutes | Serves : 1</p>
-                <p class="card-text flex-grow-1">
-                  <span class="text-danger">
-                    $10.50 <strike class="text-dark">$11.70</strike>
-                  </span>
-                </p>
-                <div class="text-start">
-                  <a href="#" class="btn btn-outline-danger ">Order Now</a> 
-                </div>                  
-              </div>
-            </div>
-          </div>
-          <!-- Item 4 -->
-          <div class="col-md-6 col-lg-3 mb-3 ">
-            <div class="card bg-light h-100">
-              <img class="mb-3 card-img card-img-top" src="https://imgs.search.brave.com/WGHwnaHrBRhce-aneotRNL6oVgzTOHhIJ0RNT4zXcVg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEw/NDgyODM0L3Bob3Rv/L3NhbmR3aWNoLWJy/ZWFkLXRvbWF0by1s/ZXR0dWNlLWFuZC15/ZWxsb3ctY2hlZXNl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1RNjl0X3ZLNzNL/WGRkZWRsdk40Um1G/Y1BMMzRtQ3dFcXBy/SnZiRFR5T1dvPQ" alt="">
-              <div class="card-body h-100 d-flex flex-column">
-                <h4 class="card-title">
-                  Sandwich bread tomato 
-                </h4>
-                <p>Time 15 - 20 Minutes | Serves : 1</p>
-                <p class="card-text flex-grow-1">
-                  <span class="text-danger">
-                    $10.50 <strike class="text-dark">$11.70</strike>
-                  </span>
-                </p>
-                <div class="text-start">
-                  <a href="#" class="btn btn-outline-danger ">Order Now</a> 
-                </div>                  
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- section- testimoninal-->
-    <section id="testimoninal">
-      <div class="container mt-5">
-        <h1 class="section-header">Client Review <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></h1>
-        <div class="testimonials">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="single-item">
-                      <div class="row">
-                          <div class="col-md-5">
-                              <div class="profile">
-                                  <div class="img-area">
-                                      <img src="/Image/facebook.png" alt="">
-                                  </div>
-                                  <div class="bio">
-                                      <h2>Dave Wood</h2>
-                                      <h4>Web Developer</h4>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="content">
-                                  <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
-                                  <p class="socials">
-                                      <i class="fa fa-twitter"></i>
-                                      <i class="fa fa-behance"></i>
-                                      <i class="fa fa-pinterest"></i>
-                                      <i class="fa fa-dribbble"></i>
-                                      <i class="fa fa-vimeo"></i>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="single-item">
-                      <div class="row">
-                          <div class="col-md-5">
-                              <div class="profile">
-                                  <div class="img-area">
-                                      <img src="/Image/instagram.png" alt="">
-                                  </div>
-                                  <div class="bio">
-                                      <h2>Martin Guptill</h2>
-                                      <h4>UI/UX Designer</h4>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="content">
-                                  <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
-                                  <p class="socials">
-                                      <i class="fa fa-twitter"></i>
-                                      <i class="fa fa-behance"></i>
-                                      <i class="fa fa-pinterest"></i>
-                                      <i class="fa fa-dribbble"></i>
-                                      <i class="fa fa-vimeo"></i>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="single-item">
-                      <div class="row">
-                          <div class="col-md-5">
-                              <div class="profile">
-                                  <div class="img-area">
-                                      <img src="/Image/twitter.png" alt="">
-                                  </div>
-                                  <div class="bio">
-                                      <h2>Stephen Jones</h2>
-                                      <h4>Graphic Designer</h4>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="content">
-                                  <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
-                                  <p class="socials">
-                                      <i class="fa fa-twitter"></i>
-                                      <i class="fa fa-behance"></i>
-                                      <i class="fa fa-pinterest"></i>
-                                      <i class="fa fa-dribbble"></i>
-                                      <i class="fa fa-vimeo"></i>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-        </div>
     </div>
-    </section>
-
-    <!-- section-6 faq -->
-    <section id="faq">
-      <div class="container mt-4">
-        <h3 class="text-center">Frequently Asked Question</h3>
-        <div class="row text-start mt-3">
-          <div class="col-md-12 col-lg-6 ">
-            <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
-            <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
+  </section>
+  <!-- counter -->
+  <section id="counter">
+    <section class="counter-section mt-2">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count1"></span>+
+            </h2>
+            <p>SAVING</p>
           </div>
-          <div class="col-md-12 col-lg-6">
-            <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
-            <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus
-              Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus
-              Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus
-            </p>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count2"></span>+
+            </h2>
+            <p>PHOTOS</p>
           </div>
-          <div class="col-md-12 col-lg-6">
-            <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
-            <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count3"></span>+
+            </h2>
+            <p>ROCKETS</p>
           </div>
-          <div class="col-md-12 col-lg-6">
-            <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
-            <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count4"></span>+
+            </h2>
+            <p>BLOBES</p>
           </div>
         </div>
       </div>
     </section>
+  </section>
 
-    <!-- section-7 book-food -->
-    <section>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2 class="text-danger-emphasis">Hurry Up! Subscribe Our Newsletter And Get 25% <br>Off</h2>
-            <p class="lead">Limited time offer for this month. No Credit card required.</p>
-            
-          </div>
-          <div class="col-md-12 col-lg-8 offset-lg-2 mb-5">
-            <div class="input-group">
-              <div class="form-control p-0">
-                <input class="input input-alt" placeholder="Email Address here" required="" type="text">
-                <span class="input-border input-border-alt"></span>
+  <!--  about -->
+  <section id="aboutus">
+    <div class="container mt-2 mb-2">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <img
+            src="https://imgs.search.brave.com/2jyXoya-fT0S5N_FXhXfRtPpXev9lAVqDEB9GF6N72U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA4/ODc4NjQ0L3Bob3Rv/L21lYXQtcGlsYWYu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXNYUHBVblRvV0Fj/TS1HdEpFMmhvWVIz/S085ZUJyTVZDNXMt/SWhfSDR1czg9"
+            class="img-fluid d-flex mx-auto " alt="">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-xl-5 p-lg-5">
+          <h3 class="text-danger mt-md-3 mt-sm-3">We Pride Ourselves On Making Real Food from the Best indredients.</h3>
+          <p class="text-black">
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet
+            leo. Mauis feugiat erat tellus.
+          </p>
+          <a href="#" class="btn btn-danger text-white"> Detail <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-2 mt-md-5 mb-5">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-xl-5 p-lg-5">
+          <h3 class="text-danger mt-md-3 mt-sm-3">We Make Everyhing by Hand With The Best Possible</h3>
+          <p class="text-black">
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet
+            leo. Mauis feugiat erat tellus.
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet
+            leo. Mauis feugiat erat tellus.
+          </p>
+          <div><i class="bi bi-check2 text-danger"></i> Etiam sec dolor ac diam volutpat</div>
+          <div><i class="bi bi-check2 text-danger"></i> Etiam sec dolor ac diam volutpat</div>
+          <div><i class="bi bi-check2 text-danger"></i> Etiam sec dolor ac diam volutpat</div>
+          <a href="#" class="btn btn-danger text-white mt-3"> Detail <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5">
+          <img
+            src="https://imgs.search.brave.com/2jyXoya-fT0S5N_FXhXfRtPpXev9lAVqDEB9GF6N72U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA4/ODc4NjQ0L3Bob3Rv/L21lYXQtcGlsYWYu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXNYUHBVblRvV0Fj/TS1HdEpFMmhvWVIz/S085ZUJyTVZDNXMt/SWhfSDR1czg9"
+            class="img-fluid d-flex mx-auto  " alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- story -->
+  <section id="story">
+    <div class="container">
+      <div class="row text-center mt-5">
+        <div class="col-12 mt-xl-5 mt-lg-5 mt-md-0 ">
+          <h1 class="text-danger mt-5">When A Man's Stomach Is Full It Makes No Difference Whether He is Rich Or Poor.
+          </h1>
+          <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet
+            leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
+          <a href="#" class="btn btn-danger text-white btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- explorefood -->
+  <section id="explorefood">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-5 text-center">
+          <h2 class="text-danger">Explore Our Foods</h2>
+          <p class="lead">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus
+            bibendum in sit amet leo. Mauis feugiat erat tellus.
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet
+            leo.
+            Etiam sec dolor ac diam volutpat
+          </p>
+        </div>
+      </div>
+      <!-- order -->
+      <div class="row mt-3 g-4">
+        <!-- Item 1 -->
+        <div class="col-md-6 col-lg-3 mb-3 ">
+          <div class="card bg-light h-100">
+            <img class="mb-3 card-img card-img-top"
+              src="https://imgs.search.brave.com/esOuKmCf1nEOBvYDU8La4sf5fDawdBFpndaXSdSoExA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/NDMwMjQ2L3Bob3Rv/L2hhbS1hbmQtY2hl/ZXNlLXNhbmR3aWNo/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1kZWFodlRMdlNF/SGk2YUQtSG9Bd3NP/RDZQcXdtX0g4QzRv/NjhITHRrOFJVPQ"
+              alt="">
+            <div class="card-body h-100 d-flex flex-column">
+              <h4 class="card-title">
+                ham and cheese sandwich
+              </h4>
+              <p>Time 15 - 20 Minutes | Serves : 1</p>
+              <p class="card-text flex-grow-1">
+                <span class="text-danger">
+                  $10.50 <strike class="text-dark">$11.70</strike>
+                </span>
+              </p>
+              <div class="text-start">
+                <a href="#" class="btn btn-outline-danger btnOrder">Order Now</a>
               </div>
-              <button class="btn btn-danger mx-3" type="button" id="">Subscribe</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- section-8 newsletter -->
-    <section id="footer">
-      <div class="container-fluid bg-danger">
-        <div class="container text-white">
-          <div class="row position-relative">
-            <div class="col-md-12 text-center mt-3 fs-5">
-              <a href="#" class="footer-link p-4 ">Register</a>
-              <a href="#" class="footer-link p-4">Form</a>
-              <a href="#" class="footer-link p-4">Affiliate</a>
-              <a href="#" class="footer-link p-4">FAQ</a>   
-              <div class="socials mt-3">
-                <a href="#" class="footer-link"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="footer-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="footer-link"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="footer-link"><i class="fab fa-dribbble"></i></a>
-                <a href="#" class="footer-link"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+        <!-- Item 2 -->
+        <div class="col-md-6 col-lg-3 mb-3 ">
+          <div class="card bg-light h-100">
+            <img class="mb-3 card-img card-img-top"
+              src="https://imgs.search.brave.com/lCZ6XOnQs9yDUAw6-eK4OwiQ6elTuJbCJ5wP1V4LPLs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/NTE0Nzg4NS9waG90/by9pdGFsaWFuLXNh/bmR3aWNoLWZvci1s/dW5jaC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9TzlDS2M4/QjljQ0EwelhPRE9Z/V0Y5WF9EMnFSWU8w/MjdxQTNrT2xCblEz/dz0"
+              alt="">
+            <div class="card-body h-100 d-flex flex-column">
+              <h4 class="card-title">
+                Italian sandwich
+              </h4>
+              <p>Time 15 - 20 Minutes | Serves : 1</p>
+              <p class="card-text flex-grow-1">
+                <span class="text-danger">
+                  $10.50 <strike class="text-dark">$11.70</strike>
+                </span>
+              </p>
+              <div class="text-start">
+                <a href="#" class="btn btn-outline-danger ">Order Now</a>
               </div>
             </div>
-            <div class="col-sm-12 text-center mt-5 mb-4">
-              <p class="lead ">Copy Right &copy; 2021 FrontEnd Bootcamp</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
+          </div>
+        </div>
+        <!-- Itme 3 -->
+        <div class="col-md-6 col-lg-3 mb-3 ">
+          <div class="card bg-light h-100">
+            <img class="mb-3 card-img card-img-top"
+              src="https://imgs.search.brave.com/mVbTrN7oZFchpDpU0tljO-r-AT5zI9Vb9l16HswoW4o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODA1/NzExNzcyL3Bob3Rv/L2ZyZXNoLXN1Ym1h/cmluZS1zYW5kd2lj/aC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9eW1GQkhDSEdn/TURZbHFYRDA3WEwt/dTdRaFZfb1N4d3V3/LVRYZldLRWpXaz0"
+              alt="">
+            <div class="card-body h-100 d-flex flex-column">
+              <h4 class="card-title">
+                fresh submarine sandwich
+              </h4>
+              <p>Time 15 - 20 Minutes | Serves : 1</p>
+              <p class="card-text flex-grow-1">
+                <span class="text-danger">
+                  $10.50 <strike class="text-dark">$11.70</strike>
+                </span>
+              </p>
+              <div class="text-start">
+                <a href="#" class="btn btn-outline-danger ">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="col-md-6 col-lg-3 mb-3 ">
+          <div class="card bg-light h-100">
+            <img class="mb-3 card-img card-img-top"
+              src="https://imgs.search.brave.com/WGHwnaHrBRhce-aneotRNL6oVgzTOHhIJ0RNT4zXcVg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEw/NDgyODM0L3Bob3Rv/L3NhbmR3aWNoLWJy/ZWFkLXRvbWF0by1s/ZXR0dWNlLWFuZC15/ZWxsb3ctY2hlZXNl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1RNjl0X3ZLNzNL/WGRkZWRsdk40Um1G/Y1BMMzRtQ3dFcXBy/SnZiRFR5T1dvPQ"
+              alt="">
+            <div class="card-body h-100 d-flex flex-column">
+              <h4 class="card-title">
+                Sandwich bread tomato
+              </h4>
+              <p>Time 15 - 20 Minutes | Serves : 1</p>
+              <p class="card-text flex-grow-1">
+                <span class="text-danger">
+                  $10.50 <strike class="text-dark">$11.70</strike>
+                </span>
+              </p>
+              <div class="text-start">
+                <a href="#" class="btn btn-outline-danger ">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- testimoninal-->
+  <section id="testimoninal">
+    <div class="container mt-5">
+      <h1 class="section-header">Testimoninals<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+      </h1>
+      <div class="col-12 col-md-10 mx-auto">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class=" mb-5 text-center">
+                      <div class="img-area">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.8 61.8" id="avatar">
+                          <g data-name="Layer 2">
+                            <g data-name="—ÎÓÈ 1">
+                              <circle cx="30.9" cy="30.9" r="30.9" fill="#ffc200"></circle>
+                              <path fill="#677079" fill-rule="evenodd"
+                                d="M52.587 52.908a30.895 30.895 0 0 1-43.667-.291 9.206 9.206 0 0 1 4.037-4.832 19.799 19.799 0 0 1 4.075-2.322c-2.198-7.553 3.777-11.266 6.063-12.335 0 3.487 3.265 1.173 7.317 1.217 3.336.037 9.933 3.395 9.933-1.035 3.67 1.086 7.67 8.08 4.917 12.377a17.604 17.604 0 0 1 3.181 2.002 10.192 10.192 0 0 1 4.144 5.22z">
+                              </path>
+                              <path fill="#f9dca4" fill-rule="evenodd"
+                                d="m24.032 38.68 14.92.09v3.437l-.007.053a2.784 2.784 0 0 1-.07.462l-.05.341-.03.071c-.966 5.074-5.193 7.035-7.803 8.401-2.75-1.498-6.638-4.197-6.947-8.972l-.013-.059v-.2a8.897 8.897 0 0 1-.004-.207c0 .036.003.07.004.106z">
+                              </path>
+                              <path fill-rule="evenodd"
+                                d="M38.953 38.617v4.005a7.167 7.167 0 0 1-.095 1.108 6.01 6.01 0 0 1-.38 1.321c-5.184 3.915-13.444.704-14.763-5.983z"
+                                opacity=".11"></path>
+                              <path fill="#f9dca4" fill-rule="evenodd"
+                                d="M18.104 25.235c-4.94 1.27-.74 7.29 2.367 7.264a19.805 19.805 0 0 1-2.367-7.264zM43.837 25.235c4.94 1.27.74 7.29-2.368 7.263a19.8 19.8 0 0 0 2.368-7.263z">
+                              </path>
+                              <path fill="#ffe8be" fill-rule="evenodd"
+                                d="M30.733 11.361c20.523 0 12.525 32.446 0 32.446-11.83 0-20.523-32.446 0-32.446z">
+                              </path>
+                              <path fill="#8a5c42" fill-rule="evenodd"
+                                d="M21.047 22.105a1.738 1.738 0 0 1-.414 2.676c-1.45 1.193-1.503 5.353-1.503 5.353-.56-.556-.547-3.534-1.761-5.255s-2.032-13.763 4.757-18.142a4.266 4.266 0 0 0-.933 3.6s4.716-6.763 12.54-6.568a5.029 5.029 0 0 0-2.487 3.26s6.84-2.822 12.54.535a13.576 13.576 0 0 0-4.145 1.947c2.768.076 5.443.59 7.46 2.384a3.412 3.412 0 0 0-2.176 4.38c.856 3.503.936 6.762.107 8.514-.829 1.752-1.22.621-1.739 4.295a1.609 1.609 0 0 1-.77 1.214c-.02.266.382-3.756-.655-4.827-1.036-1.07-.385-2.385.029-3.163 2.89-5.427-5.765-7.886-10.496-7.88-4.103.005-14 1.87-10.354 7.677z">
+                              </path>
+                              <path fill="#434955" fill-rule="evenodd"
+                                d="M19.79 49.162c.03.038 10.418 13.483 22.63-.2-1.475 4.052-7.837 7.27-11.476 7.26-6.95-.02-10.796-5.6-11.154-7.06z">
+                              </path>
+                              <path fill="#e6e6e6" fill-rule="evenodd"
+                                d="M36.336 61.323c-.41.072-.822.135-1.237.192v-8.937a.576.576 0 0 1 .618-.516.576.576 0 0 1 .619.516v8.745zm-9.82.166q-.622-.089-1.237-.2v-8.711a.576.576 0 0 1 .618-.516.576.576 0 0 1 .62.516z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="bio bio">
+                        <h2>Dave Wood</h2>
+                        <h4>Web Developer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="fs-5  mt-lg-3 mt-xl-5 ">
+                      <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur
+                        laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis
+                        commodi consequatur molestiae voluptatum!</p>
+                      <p class="">
+                        <a href="#" class="text-black mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-linkedin"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="mb-5 text-center">
+                      <div class="img-area">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.8 61.8" id="avatar">
+                          <g data-name="Layer 2">
+                            <g data-name="—ÎÓÈ 1">
+                              <path fill="#ffe8be" fill-rule="evenodd"
+                                d="M31.129 8.432c21.281 0 12.987 35.266 0 35.266-12.266 0-21.281-35.266 0-35.266z">
+                              </path>
+                              <circle cx="30.9" cy="30.9" r="30.9" fill="#a9cf54"></circle>
+                              <path fill="#302e33" fill-rule="evenodd"
+                                d="M16.647 25.104s1.394 18.62-1.98 23.645 16.51-.19 16.51-.19l.006-34.863z"></path>
+                              <path fill="#302e33" fill-rule="evenodd"
+                                d="M45.705 25.104s-1.394 18.62 1.981 23.645-16.51-.19-16.51-.19l-.006-34.863z"></path>
+                              <path fill="#f9dca4" fill-rule="evenodd"
+                                d="M52.797 52.701c-.608-1.462-.494-2.918-5.365-5.187-2.293-.542-8.21-1.319-9.328-3.4-.567-1.052-.43-2.535-.43-5.292l-12.93-.142c0 2.777.109 4.258-.524 5.298-1.19 1.957-8.935 3.384-11.338 4.024-4.093 1.819-3.625 2.925-4.165 4.406a30.896 30.896 0 0 0 44.08.293z">
+                              </path>
+                              <path fill-rule="evenodd"
+                                d="m37.677 38.778-.015 2.501a5.752 5.752 0 0 0 .55 3.011c-4.452 3.42-12.794 2.595-13.716-5.937z"
+                                opacity=".11"></path>
+                              <path fill="#f9dca4" fill-rule="evenodd"
+                                d="M19.11 24.183c-2.958 1.29-.442 7.41 1.42 7.383a30.842 30.842 0 0 1-1.42-7.383zM43.507 24.182c2.96 1.292.443 7.411-1.419 7.384a30.832 30.832 0 0 0 1.419-7.384z">
+                              </path>
+                              <path fill="#ffe8be" fill-rule="evenodd"
+                                d="M31.114 8.666c8.722 0 12.377 6.2 12.601 13.367.307 9.81-5.675 21.43-12.6 21.43-6.56 0-12.706-12.018-12.333-21.928.26-6.953 3.814-12.869 12.332-12.869z">
+                              </path>
+                              <path fill="#464449" fill-rule="evenodd"
+                                d="M31.183 13.697c-.579 2.411-3.3 10.167-14.536 11.407C15.477 5.782 30.182 6.256 31.183 6.311c1.002-.055 15.707-.53 14.536 18.793-11.235-1.24-13.957-8.996-14.536-11.407z">
+                              </path>
+                              <path fill="#e9573e" fill-rule="evenodd"
+                                d="M52.797 52.701c-14.87 4.578-34.168 1.815-39.915-4.699-4.093 1.819-3.625 2.925-4.165 4.406a30.896 30.896 0 0 0 44.08.293z">
+                              </path>
+                              <path fill="#e9573e" fill-rule="evenodd"
+                                d="m42.797 46.518 1.071.253-.004 8.118h-1.067v-8.371z"></path>
+                              <path fill="#464449" fill-rule="evenodd"
+                                d="M23.834 44.42c.002.013.878 4.451 7.544 4.451 6.641 0 7.046-4.306 7.047-4.318l.188.183c0 .012-.564 4.702-7.235 4.702-6.797 0-7.756-4.83-7.759-4.845z">
+                              </path>
+                              <ellipse cx="31.324" cy="49.445" fill="#464449" rx="1.513" ry="1.909"></ellipse>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="bio">
+                        <h2>Martin Guptill</h2>
+                        <h4>UI/UX Designer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="fs-5  mt-lg-3 mt-xl-5 ">
+                      <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur
+                        laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis
+                        commodi consequatur molestiae voluptatum!</p>
+                      <p class="">
+                        <a href="#" class="text-black mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-linkedin"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="mb-5 text-center">
+                      <div class="img-area">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.8 61.8" id="avatar">
+                          <g data-name="Layer 2">
+                            <g data-name="—ÎÓÈ 1">
+                              <circle cx="30.9" cy="30.9" r="30.9" fill="#e9573e"></circle>
+                              <path fill="#f9dca4" fill-rule="evenodd"
+                                d="M23.255 38.68l15.907.149v3.617l7.002 3.339-15.687 14.719-13.461-15.34 6.239-2.656V38.68z">
+                              </path>
+                              <path fill="#677079" fill-rule="evenodd"
+                                d="M53.478 51.993A30.813 30.813 0 0 1 30.9 61.8a31.226 31.226 0 0 1-3.837-.237A34.071 34.071 0 0 1 15.9 57.919a31.034 31.034 0 0 1-7.856-6.225l1.283-3.1 11.328-5.054c.875 4.536 4.235 11.535 10.176 15.502a24.128 24.128 0 0 0 11.057-15.318l10.063 4.903z">
+                              </path>
+                              <path fill-rule="evenodd"
+                                d="M39.791 42.745c.728.347 1.973.928 2.094.999-2.03 6.368-15.72 8.7-19.756-.756z"
+                                opacity=".11"></path>
+                              <path fill="#ffe8be" fill-rule="evenodd"
+                                d="M31.129 8.432c21.281 0 12.987 35.266 0 35.266-12.266 0-21.281-35.266 0-35.266z">
+                              </path>
+                              <path fill="#f9dca4" fill-rule="evenodd"
+                                d="M18.365 24.045c-3.07 1.34-.46 7.687 1.472 7.658a31.974 31.974 0 01-1.472-7.658zM44.14 24.045c3.07 1.339.46 7.687-1.471 7.658a31.993 31.993 0 001.471-7.658z">
+                              </path>
+                              <path fill="#ad835f" fill-rule="evenodd"
+                                d="M23.396 15.437c-.592 2.768-.384 5.52-3.008 6.028-.624.12-1.037.965-1.172 1.71a22.896 22.896 0 00-.38 4.931c.104.569-.396-1.092-.396-1.092l-.085-3.174s-.037-.608-.023-1.535c.03-1.88.244-4.928 1.196-5.86 1.421-1.39 3.868-1.008 3.868-1.008zM39.095 15.437c.592 2.768.385 5.52 3.008 6.028.624.12 1.038.965 1.172 1.71a21.808 21.808 0 01.312 4.947c-.105.57.395-1.092.395-1.092l.166-3.178s.025-.62.01-1.547c-.028-1.88-.242-4.928-1.195-5.86-1.421-1.39-3.868-1.008-3.868-1.008z">
+                              </path>
+                              <path fill="#60350a" fill-rule="evenodd"
+                                d="M25.364 46.477c-1.51-1.457-2.718-2.587-3.814-3.718-1.405-1.451-1.881-2.922-2.154-5.498a110.846 110.846 0 01-1.043-13.43s1.034 6.333 2.962 9.455c.99 1.603 5.04-2.165 6.655-2.738a2.683 2.683 0 013.24.782 2.636 2.636 0 013.213-.782c1.616.573 5.61 3.792 6.656 2.738 2.515-2.536 3.057-9.446 3.057-9.446a113.885 113.885 0 01-1.129 13.576c-.363 2.746-.547 3.81-1.486 4.884a30.775 30.775 0 01-4.57 4.193c-.828.656-2.267 1.272-5.933 1.25-3.406-.02-4.803-.446-5.654-1.267zM39.604 15.997a2.638 2.638 0 012.76 1.227c1.556 2.613 1.685 2.95 1.685 2.95s-.184-4.674-.295-5.23a.697.697 0 01.973.028c.11.222-.444-4.7-3.335-5.644-1.057-3.002-4.754-5.226-4.754-5.226l-.167 1.668a6.056 6.056 0 00-5.265-4.145c.667.751.507 1.3.507 1.3a8.152 8.152 0 00-3.288-.632c.14.889-.889 1.835-.889 1.835s-.639-.974-3.169-1.307c-.445 1.612-1.28 1.89-2.085 2.641a18.92 18.92 0 00-1.861 2.224s.083-1.557.639-2.002c.209-.138-4.716 1.803-2.252 9.036a1.962 1.962 0 00-1.945 1.462c1.39.389.815 2.49 1.593 3.852.547-1.58.909-4.658 4.328-3.852 2.448.577 4.798 1.814 7.62 1.913 3.987.139 5.501-1.954 9.2-2.098z">
+                              </path>
+                              <path fill="#ffe8be" fill-rule="evenodd"
+                                d="M32.415 38.594a2.774 2.774 0 0 0 2.214-.588c.72-.83 1.307-2.009.215-2.643a8.583 8.583 0 0 0-3.581-1.472 8.595 8.595 0 0 0-3.604 1.47c-1.34.775-.52 1.815.201 2.645a2.774 2.774 0 0 0 2.214.588c-.811-2.824 3.153-2.824 2.341 0z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="bio">
+                        <h2>Stephen Jones</h2>
+                        <h4>Graphic Designer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="fs-5  mt-lg-3 mt-xl-5 ">
+                      <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur
+                        laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis
+                        commodi consequatur molestiae voluptatum!</p>
+                      <p class="">
+                        <a href="#" class="text-black mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-black mx-2"><i class="bi bi-linkedin"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- faq -->
+  <section id="faq">
+    <div class="container mt-4">
+      <h3 class="text-center">Frequently Asked Question</h3>
+      <div class="row text-start mt-3">
+        <div class="col-md-12 col-lg-6 ">
+          <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
+          <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in
+            sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
+          <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in
+            sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet
+            leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in sit amet
+            leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
+          <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in
+            sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <h5 class="text-danger">~ Is Foodies Breead Really Baked Fresh Each Day?</h5>
+          <p class="">Lorem ipsum dolor sit amet. consectetur adipiscing elit. Eriam et purus a odio finibus bibendum in
+            sit amet leo. Mauis feugiat erat tellus.Mauris feugiat erat tellus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--book-food -->
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2 class="text-danger-emphasis">Hurry Up! Subscribe Our Newsletter And Get 25% Off</h2>
+          <p class="lead">Limited time offer for this month. No Credit card required.</p>
+        </div>
+        <div class="col-md-12 col-lg-8 offset-lg-2 mb-5">
+          <div class="input-group">
+            <div class="form-control p-0">
+              <input class="input input-alt" placeholder="Email Address here" required="" type="text">
+              <span class="input-border input-border-alt"></span>
+            </div>
+            <button class="btn btn-danger mx-3" type="button" id="">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section id="footer">
+    <div class="container-fluid bg-danger">
+      <div class="container text-white">
+        <div class="row position-relative">
+          <div class="col-md-12 text-center my-3 fs-5 text-white">
+            <a href="#" class="text-white p-4 ">Register</a>
+            <a href="#" class="text-white p-4">Form</a>
+            <a href="#" class="text-white p-4">Affiliate</a>
+            <a href="#" class="text-white p-4">FAQ</a>
+            <div class="row mt-3 h3">
+              <div class="  col-10 offset-1">
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-youtube"></i></a>
+              </div>
+              <div class="col-1 ">
+                <a href="#" class="position-absolute end-0">
+                  <i class="bi bi-arrow-up-circle h2 "></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- section-6 footer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-  // $(function(){
-  //   $("nav,.section1").click(function(e){
-  //     if(e.target.getAttribute("class")==="navbar-collapse" || $(e.target).parents(".navbar-collapse").length>0){
-        
-  //     }else{
-  //       if($(".navbar-collapse").hasClass("in")==true){
-  //         $(".navbar-toggler")[0].click();
-  //       }
-  //     }
-  //   })
-  // })
-  // menu click header 
-  $(function(){
-    $(document).click(function(event) {
-        var clickover = $(event.target);
-        var _opened = $(".navbar-collapse").hasClass("show");
-        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-            $(".navbar-toggler").click();
-        }
-    });
-  });
-  document.addEventListener("DOMContentLoaded",() =>{
-    function counter(id, start, end, duration){
-        let obj = document.getElementById(id),
-        current = start ,
-        range = end -start,
-        increment = end > start ? 1 : -1,
-        step = Math.abs(Math.floor(duration / range)),
-        timer = setInterval(() => {
-            current +=increment;
-            obj.textContent =current;
-            if(current == end){
-                clearInterval(timer);
-            }
-        },step);
-    }
-    counter("count1",0,287,3000);
-    counter("count2",0,603,2500);
-    counter("count3",0,1687,3000);
-    counter("count4",0,587,7000);
-})
-
-
-</script>
-
-
-
-
+    </div>
+  </section>
 </body>
 </html>
