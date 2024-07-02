@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<style>
+    ul.custom-list {
+        list-style-image: url('./Images/check-solid.svg');
+    }
+
+    ul.custom-list li::marker {
+        font-size: 28px;
+    }
+</style>
+
+<body class="w-10/12 lg:w-8/12 mx-auto text-xs sm:text-sm md:text-base lg:text-lg bg-primary">
+    <!-- navbar -->
+    <nav x-data="{ open: false, scrolled: false }" x-init="() => {
+        window.addEventListener('scroll', () => {
+            scrolled = window.scrollY > 0;
+        });
+    }" :class="{ 'shadow-md': scrolled }"
+        class="w-10/12 lg:w-8/12 mx-auto font-serif text-xs sm:text-sm md:text-base fixed top-0 bg-primary z-50 transition-shadow duration-300">
+        <div class="w-full flex justify-between py-4 md:items-center">
+            <div class="md:flex ml-5 items-center ">
+                <a href="index.html" class="md:mr-8 lg:mr-10 font-semibold lg:text-lg">Lan<span
+                        class="text-blue-700">do</span></a>
+                <nav class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
+                    <a class="mx-4" href="index.html">Home</a>
+                    <a class="mx-3" href="pricing.html">Pricing</a>
+                    <a class="mx-4" href="aboutus.html">About us</a>
+                    <a class="mx-4" href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="md:flex md:items-center mr-5">
+                <a href="login.html"
+                    class=" mr-2 md:mr-0 text-white bg-blue-700 md:text-black md:bg-transparent p-2 px-4 rounded-lg">Log
+                    in
+                </a>
+                <a href="signup.html"
+                    class="hidden md:block mr-2 md:mr-0 text-white bg-blue-700 rounded-lg p-2 px-4 ml-3">Sign up</a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4 md:w-6 md:h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="md:hidden  flex-col flex-grow hidden">
+            <a class="ml-5 py-2 " href="index.html">Home</a>
+            <a class="ml-5 py-2" href="pricing.html">Pricing</a>
+            <a class="ml-5 py-2" href="aboutus.html">About us</a>
+            <a class="ml-5 py-2" href="contact.html">Contact</a>
+        </nav>
+    </nav>
+
+    <section class="px-8 pt-24 pb-12 md:pt-0 md:pb-0 md:mt-24">
+        <div class="w-full mx-auto text-center">
+            <h2 class="font-serif text-2xl xl:text-4xl font-semibold  text-blue-gray-900 mb-4">
+                Pricing</h2>
+            <p class="font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
+                Our pricing is not experience, but it's not sheap either, it's excatly what it should be</p>
+        </div>
+        <div class="w-full mt-12">
+            <div class="grid md:grid-cols-3 gap-4 md:gap-0">
+                <div
+                    class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md border border-blue-gray-100">
+                    <div
+                        class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none !m-0 p-4">
+                        <h5 class="font-sans text-sm md:text-base lg:text-lg font-semibold">
+                            Basic</h5>
+                        <h3 class="font-sans font-semibold flex gap-1 mt-4  items-baseline">
+                            <span class="text-4xl font-bold">$9.99</span>
+                            <span class="text-lg">/month</span><span
+                                class="block  font-sans text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span>
+                        </h3>
+                        <p class="font-mono text-xs md:text-sm mt-2 md:mt-4">For individuals and small teams</p>
+                    </div>
+                    <div class="p-6  mt-auto">
+                        <button
+                            class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-blue-700 text-blue-700 hover:opacity-75 focus:ring focus:ring-blue-300 active:opacity-[0.85] block w-full mt-6"
+                            type="button">Get Started with Basic</button>
+                    </div>
+                </div>
+                <div
+                    class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md border border-blue-gray-100 md:scale-105 z-10">
+                    <div
+                        class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none !m-0 p-4">
+                        <div class="text-end">
+                            <h3 class="inline-block font-mono p-1 px-4 bg-blue-700 text-white rounded-full text-xs">
+                                Most Popular
+                            </h3>
+                        </div>
+                        <h5 class="font-sans text-sm md:text-base lg:text-lg font-semibold">
+                            Pro</h5>
+                        <h3 class="font-sans font-semibold flex gap-1 mt-4  items-baseline">
+                            <span class="text-4xl font-bold">$29.99</span>
+                            <span class="text-lg">/month</span><span
+                                class="block  font-sans text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span>
+                        </h3>
+                        <p class="font-mono text-xs md:text-sm mt-2 md:mt-4">For startups and growing business</p>
+                    </div>
+                    <div class="p-6 mt-auto">
+                        <button
+                            class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg bg-blue-700 text-white border border-blue-700 hover:opacity-75 focus:ring focus:ring-blue-300 active:opacity-[0.85] block w-full mt-6"
+                            type="button">Get Started with Pro</button>
+                    </div>
+                </div>
+                <div
+                    class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md border border-blue-gray-100">
+                    <div
+                        class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none !m-0 p-4">
+                        <h5 class="font-sans text-sm md:text-base lg:text-lg font-semibold">
+                            Business</h5>
+                        <h3 class="font-sans font-semibold flex gap-1 mt-4  items-baseline">
+                            <span class="text-4xl font-bold">$99.99</span>
+                            <span class="text-lg">/month</span><span
+                                class="block  font-sans text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span>
+                        </h3>
+                        <p class="font-mono text-xs md:text-sm mt-2 md:mt-4">For organizations with advanced needs</p>
+                    </div>
+                    <div class="p-6 mt-auto">
+                        <button
+                            class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-blue-700 text-blue-700 hover:opacity-75 focus:ring focus:ring-blue-300 active:opacity-[0.85] block w-full mt-6"
+                            type="button">Get Started with Business</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full md:my-10 ">
+        <h3 class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-sans font-bold">Compare Features</h3>
+        <div class="w-full grid grid-cols-1 md:grid-cols-3">
+            <div class="w-full">
+                <h3
+                    class="py-3 md:my-5 border-b-2 border-gray-300 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-sans font-bold">
+                    Basics
+                </h3>
+                <ul class="custom-list px-5">
+                    <li>Process Analysis</li>
+                    <li>Task Management</li>
+                    <li>Time Tracking</li>
+                    <li>Performance Metrics</li>
+                    <li>Customizable Reports</li>
+                    <li>Email integration</li>
+                </ul>
+            </div>
+            <div class="w-full">
+                <h3
+                    class="py-3 md:my-5 border-b-2 border-gray-300 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-sans font-bold">
+                    Pro
+                </h3>
+                <ul class="custom-list px-5">
+                    <li>Process Analysis</li>
+                    <li>Task Management</li>
+                    <li>Time Tracking</li>
+                    <li>Performance Metrics</li>
+                    <li>Customizable Reports</li>
+                    <li>Email integration</li>
+                    <li>Real-time Collaboration</li>
+                    <li>Automated Workflows</li>
+                </ul>
+            </div>
+            <div class="w-full">
+                <h3
+                    class="py-3 md:my-5 border-b-2 border-gray-300 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-sans font-bold">
+                    Pro
+                </h3>
+                <ul class="custom-list px-5">
+                    <li>Process Analysis</li>
+                    <li>Task Management</li>
+                    <li>Time Tracking</li>
+                    <li>Performance Metrics</li>
+                    <li>Customizable Reports</li>
+                    <li>Email integration</li>
+                    <li>Real-time Collaboration</li>
+                    <li>Automated Workflows</li>
+                    <li>Analytics Dashboard</li>
+                    <li>SLA Management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- component -->
+    <div class="max-w-screen-xl mx-auto px-5 min-h-sceen mt-5 md:mt-10">
+        <div class="w-4/12 mx-auto flex justify-center">
+            <img src="./Images/6.png" class="object-cover" alt="...">
+        </div>
+        <div class="text-center">
+            <h2 class="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl mt-5 tracking-tight">
+                Frequenty asked <br> questions
+            </h2>
+        </div>
+        <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> What is a SAAS platform?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        SAAS platform is a cloud-based software service that allows users to access
+                        and use a variety of tools and functionality.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> How does billing work?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        We offers a variety of billing options, including monthly and annual subscription plans,
+                        as well as pay-as-you-go pricing for certain services. Payment is typically made through a
+                        credit
+                        card or other secure online payment method.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> Can I get a refund for my subscription?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        We offers a 30-day money-back guarantee for most of its subscription plans. If you are not
+                        satisfied with your subscription within the first 30 days, you can request a full refund.
+                        Refunds
+                        for subscriptions that have been active for longer than 30 days may be considered on a
+                        case-by-case
+                        basis.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> How do I cancel my subscription?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        To cancel your We subscription, you can log in to your account and navigate to the
+                        subscription management page. From there, you should be able to cancel your subscription and
+                        stop
+                        future billing.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> Can I try this platform for free?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        We offers a free trial of its platform for a limited time. During the trial period,
+                        you will have access to a limited set of features and functionality, but you will not be
+                        charged.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> How do I access documentation?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        Documentation is available on the company's website and can be accessed by
+                        logging in to your account. The documentation provides detailed information on how to use the ,
+                        as well as code examples and other resources.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> How do I contact support?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        If you need help with the platform or have any other questions, you can contact the
+                        company's support team by submitting a support request through the website or by emailing
+                        support@We.com.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> Do you offer any discounts or promotions?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        We may offer discounts or promotions from time to time. To stay up-to-date on the latest
+                        deals and special offers, you can sign up for the company's newsletter or follow it on social
+                        media.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <span> How do we compare to other similar services?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                        This platform is a highly reliable and feature-rich service that offers a wide range
+                        of tools and functionality. It is competitively priced and offers a variety of billing options
+                        to
+                        suit different needs and budgets.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-auto md:h-[720px] mx-auto flex items-center mt-32">
+        <div class="w-full h-auto mx-auto bg-secondary  rounded-xl grid grid-cols-1 md:grid-cols-2 p-5 items-center">
+            <div class="order-2 md:order-1 ">
+                <article class="md:p-5 md:px-10">
+                    <h1 class="font-semibold font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                        Get started today with Lando</h1>
+                    <p class="font-sans mt-2">Start optimizing your processes today.</p>
+                    <button class="p-2 px-4 mt-4 md:mt-6 bg-blue-700 text-white text-base  rounded-lg">Sign up
+                        now</button>
+                </article>
+            </div>
+            <div class="w-full flex items-center order-1 md:order-2">
+                <img src="./Images/3.png"
+                    class="w-full h-full sm:w-10/12 sm:h-5/6 md:w-full md:h-full object-center mx-auto" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="w-full h-auto md:flex my-5 md:my-10">
+            <div class="w-full md:w-4/12 ">
+                <article>
+                    <a href="index.html"
+                        class="md:mr-8 lg:mr-10 font-semibold font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">Lan<span
+                            class="text-blue-700">do</span></a>
+                    <p class="text-xs md:text-sm font-mono">2021 &copy; Lando <br> All rights reserved.</p>
+                </article>
+            </div>
+            <div class="w-full md:w-8/12 grid grid-cols-3 mt-5 md:mt-0  text-xs sm:text-sm">
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="#Facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#Instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#Twitter">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#Linkedin">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="#privacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#termsofservice">Terms Of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

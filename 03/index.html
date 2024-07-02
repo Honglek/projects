@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body class="w-10/12 lg:w-8/12 mx-auto text-xs sm:text-sm md:text-base lg:text-lg bg-primary">
+    <!-- navbar -->
+    <nav x-data="{ open: false, scrolled: false }" x-init="() => {
+        window.addEventListener('scroll', () => {
+            scrolled = window.scrollY > 0;
+        });
+    }" :class="{ 'shadow-md': scrolled }"
+        class="w-10/12 lg:w-8/12 mx-auto font-serif text-xs sm:text-sm md:text-base fixed top-0 bg-primary z-50 transition-shadow duration-300">
+        <div class="w-full flex justify-between py-4 md:items-center">
+            <div class="md:flex ml-5 items-center ">
+                <a href="index.html" class="md:mr-8 lg:mr-10 font-semibold lg:text-lg">Lan<span
+                        class="text-blue-700">do</span></a>
+                <nav class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
+                    <a class="mx-4" href="index.html">Home</a>
+                    <a class="mx-3" href="pricing.html">Pricing</a>
+                    <a class="mx-4" href="aboutus.html">About us</a>
+                    <a class="mx-4" href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="md:flex md:items-center mr-5">
+                <a href="login.html"
+                    class=" mr-2 md:mr-0 text-white bg-blue-700 md:text-black md:bg-transparent p-2 px-4 rounded-lg">Log
+                    in
+                </a>
+                <a href="signup.html"
+                    class="hidden md:block mr-2 md:mr-0 text-white bg-blue-700 rounded-lg p-2 px-4 ml-3">Sign up</a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4 md:w-6 md:h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="md:hidden  flex-col flex-grow hidden">
+            <a class="ml-5 py-2 " href="index.html">Home</a>
+            <a class="ml-5 py-2" href="pricing.html">Pricing</a>
+            <a class="ml-5 py-2" href="aboutus.html">About us</a>
+            <a class="ml-5 py-2" href="contact.html">Contact</a>
+        </nav>
+    </nav>
+
+    <!-- //// -->
+    <div class="w-full  h-[780px] mx-auto sm:mt-20 md:mt-0 ">
+        <div class="w-full h-5/6 items-center grid grid-cols-1 md:grid-cols-2 px-10">
+            <div class="">
+                <article>
+                    <h6 class="uppercase text-gray-400 text-opacity-60 font-bold font-mono">- free 30 days trial </h6>
+                    <h1
+                        class="font-semibold mt-2 md:mt-4 font-serif text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                        The bes way to
+                        showcase your project.</h1>
+                    <p class="mt-2 md:mt-5">Here you can put a short descrition about your project.</p>
+                    <div class="flex space-x-2  mt-4 md:mt-6">
+                        <button
+                            class="p-1 px-2 md:p-2 md:px-4 bg-blue-700 text-white text-sm md:text-base rounded-lg">Try
+                            for
+                            free</button>
+                        <button
+                            class="p-1 px-2 md:p-2 md:px-4 bg-transparent border-2 border-gray-400  text-sm md:text-base rounded-lg">see
+                            how it
+                            works</button>
+                    </div>
+                </article>
+            </div>
+            <div class="w-full  flex items-center ">
+                <img src="./Images/1.png" class="w-10/12 h-5/6 object-center mx-auto" alt="">
+            </div>
+        </div>
+        <div class="w-full h-1/6">
+            <p class="text-black text-opacity-70 text-center text-sm md:text-base lg:text-lg font-mono">Trusted by
+                individuals and team at the world's <br> best companies.</p>
+        </div>
+    </div>
+    <!-- //// -->
+    <div class="w-full h-[720px] mx-auto flex items-center">
+        <div class="w-full h-auto mx-auto bg-secondary  rounded-xl grid grid-cols-1 md:grid-cols-2 p-5 items-center">
+            <div class="order-2 md:order-1 ">
+                <article class="md:p-5 md:px-10">
+                    <h1 class="font-semibold font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                        Introducing
+                        good solution</h1>
+                    <p class="font-sans mt-2">Join our community and experience the benefits today.</p>
+                    <button class="p-2 px-4 mt-4 bg-blue-700 text-white text-base  rounded-lg">Try for free</button>
+                </article>
+            </div>
+            <div class="w-full flex items-center order-1 md:order-2">
+                <img src="./Images/2.png"
+                    class="w-full h-full sm:w-10/12 sm:h-5/6 md:w-full md:h-full object-center mx-auto" alt="banner">
+            </div>
+        </div>
+    </div>
+
+    <!-- ///// -->
+    <div class="w-full md:h-[720px] h-auto mx-auto flex items-center">
+        <div class="w-full h-auto mx-auto  rounded-xl grid grid-cols-1 md:grid-cols-2 p-5 items-center">
+            <div class="order-2">
+                <article class="md:p-5 md:px-10">
+                    <h6 class="uppercase text-gray-400 text-opacity-70 font-bold font-mono text-sm">smartsave</h6>
+                    <h1
+                        class="font-medium font-serif mt-1 md:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                        All your work is safe with us</h1>
+                    <p class="font-sans mt-2">We take your data security seriously which is why we use advanced
+                        encryption protocols to protect your files in the cloud. Your data is safe and secure with us.
+                    </p>
+                    <button class="p-2 px-4 mt-4 text-black border-2 border-gray-400 text-base rounded-lg">Try
+                        now</button>
+                </article>
+            </div>
+            <div class="w-full flex items-center order-1">
+                <img src="./Images/3.png" class="w-full h-full object-center mx-auto" alt="banner">
+            </div>
+        </div>
+    </div>
+
+    <!-- ///// -->
+    <div class="w-full md:h-[720px] h-auto mx-auto flex items-center">
+        <div class="w-full h-auto mx-auto  rounded-xl grid grid-cols-1 md:grid-cols-2 p-5 items-center">
+            <div class="order-2 md:order-1">
+                <article class="md:p-5 md:px-10">
+                    <h6 class="uppercase text-gray-400 text-opacity-70 font-bold font-mono text-sm">costsaver</h6>
+                    <h1
+                        class="font-medium font-serif mt-1 md:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                        Cost saving in a smart way</h1>
+                    <p class="font-sans mt-2">Powerful tool that helps you reduce costs and save money on your business.
+                        With advanced analytics and optimization alogorithms, Costsaver your existing workflows and
+                        identifies areas for improvement.
+                    </p>
+                    <button class="p-2 px-4 mt-4 text-black border-2 border-gray-400 text-base  rounded-lg">Try
+                        now</button>
+                </article>
+            </div>
+            <div class="w-full flex items-center order-1 md:order-2">
+                <img src="./Images/4.png" class="w-full h-full object-center mx-auto" alt="banner">
+            </div>
+        </div>
+    </div>
+
+    <!-- //// -->
+    <div class="w-full md:mt-32 h-auto md:h-[720px] mx-auto flex items-center  ">
+        <div class="w-full h-auto  grid grid-cols-1 md:grid-cols-2 p-5 bg-secondary rounded-lg">
+            <div class="w-full h-full md:relative ">
+                <div class="w-full md:absolute h-auto md:-top-[30%] xl:-top-[40%] ">
+                    <div class="w-full h-full relative ">
+                        <img src="./Images/2.png" class="w-full h-full object-center object-cover " alt="">
+                    </div>
+                </div>
+                <div class="w-full h-auto  md:mt-[40%] xl:mt-[45%] p-5">
+                    <h1
+                        class="font-medium font-serif mt-1 md:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                        How to join our community</h1>
+                    <p class="font-sans mt-2">Just 3 simple steps to optimize your compary <br> operations.
+                    </p>
+                    <button class="p-2 px-8 mt-4 bg-blue-700 text-white  rounded-lg text-base">Sign up Now</button>
+                </div>
+            </div>
+            <div class="w-full h-full p-5 flex items-center justify-center">
+                <div class="w-full h-auto space-y-5 ">
+                    <div class="w-full  border-b-2 border-b-slate-800 border-opacity-50">
+                        <article class="w-8/12 ">
+                            <h2 class=" mt-5 font-serif font-semibold text-base md:text-xl lg:text-2xl">Step 1</h2>
+                            <p class="mb-5 font-mono text-xs md:text-base">Rearch out to one of our specialists, and
+                                have short
+                                introduction session.</p>
+                        </article>
+                    </div>
+                    <div class="w-full  border-b-2 border-b-slate-800 border-opacity-50">
+                        <article class="w-8/12 ">
+                            <h2 class=" mt-5 font-serif font-semibold text-base md:text-xl lg:text-2xl">Step 2</h2>
+                            <p class="mb-5 font-mono text-xs md:text-base">Rearch out to one of our specialists, and
+                                have short
+                                introduction session.</p>
+                        </article>
+                    </div>
+                    <div class="w-full  border-b-2 border-b-slate-800 border-opacity-50">
+                        <article class="w-8/12 ">
+                            <h2 class=" mt-5 font-serif font-semibold text-base md:text-xl lg:text-2xl">Step 3</h2>
+                            <p class="mb-5 font-mono text-xs md:text-base">Rearch out to one of our specialists, and
+                                have short
+                                introduction session.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ///// -->
+    <div class="w-full h-auto md:h-screen mx-auto my-10 md:my-0 flex items-center">
+        <div class="w-full">
+            <div class="w-full mx-auto text-center">
+                <h1
+                    class="font-medium font-serif  mt-1 md:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                    Testimonials</h1>
+                <p class="font-mono text-xs md:text-base">People love what we do and we want to let your know</p>
+            </div>
+            <div class="w-full h-auto grid grid-cols-1 md:grid-cols-3 my-5 md:my-10 gap-5">
+                <div class="w-full h-auto bg-secondary p-2 md:p-5 px-10 rounded-lg">
+                    <article class="text-center">
+                        <h4 class="mb-5 font-sans font-semibold">"Since implementing Lando our business has seen
+                            significant
+                            growth."</h4>
+                        <div class="flex justify-center space-x-1 md:space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-medium mt-2 ">Jack Sibire</h3>
+                        <h6 class="text-black text-opacity-70 text-xs">Lead Manager, Growio</h6>
+                    </article>
+                </div>
+                <div class="w-full h-auto bg-secondary p-2 md:p-5 px-10 rounded-lg">
+                    <article class="text-center">
+                        <h4 class="mb-5 font-sans font-semibold">"I recommend Lando to any business lookgin for
+                            implement."
+                        </h4>
+                        <div class="flex justify-center space-x-1 md:space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-medium mt-2 ">Adele Mouse</h3>
+                        <h6 class="text-black text-opacity-70 text-xs">Product Manager, Mousio</h6>
+                    </article>
+                </div>
+                <div class="w-full h-auto bg-secondary p-2 md:p-5 px-10 rounded-lg">
+                    <article class="text-center">
+                        <h4 class="mb-5 font-sans font-semibold">"I can't imagine running our company without it."</h4>
+                        <div class="flex justify-center space-x-1 md:space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-6 md:h-6 fill-orange-400"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-medium mt-2 ">Ben Clock</h3>
+                        <h6 class="text-black text-opacity-70 text-xs">CTO, Clockwork</h6>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ///// -->
+    <div class="w-full h-auto md:h-[720px] mx-auto flex items-center">
+        <div class="w-full h-auto mx-auto bg-secondary  rounded-xl grid grid-cols-1 md:grid-cols-2 p-5 items-center">
+            <div class="order-2 md:order-1 ">
+                <article class="md:p-5 md:px-10">
+                    <h1 class="font-semibold font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                        Get started today with Lando</h1>
+                    <p class="font-sans mt-2">Start optimizing your processes today.</p>
+                    <button class="p-2 px-4 mt-4 md:mt-6 bg-blue-700 text-white text-base  rounded-lg">Sign up
+                        now</button>
+                </article>
+            </div>
+            <div class="w-full flex items-center order-1 md:order-2">
+                <img src="./Images/3.png"
+                    class="w-full h-full sm:w-10/12 sm:h-5/6 md:w-full md:h-full object-center mx-auto" alt="banner">
+            </div>
+        </div>
+    </div>
+
+    <!-- ////// -->
+    <footer>
+        <div class="w-full h-auto md:flex my-5 md:my-10">
+            <div class="w-full md:w-4/12 ">
+                <article>
+                    <a href="index.html"
+                        class="md:mr-8 lg:mr-10 font-semibold font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">Lan<span
+                            class="text-blue-700">do</span></a>
+                    <p class="text-xs md:text-sm font-mono">2021 &copy; Lando <br> All rights reserved.</p>
+                </article>
+            </div>
+            <div class="w-full md:w-8/12 grid grid-cols-3 mt-5 md:mt-0  text-xs sm:text-sm">
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="#Facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#Instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#Twitter">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#Linkedin">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="#privacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#termsofservice">Terms Of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

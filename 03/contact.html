@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+
+<body class="w-10/12 lg:w-8/12 mx-auto text-xs sm:text-sm md:text-base lg:text-lg bg-primary">
+    <!-- navbar -->
+    <nav x-data="{ open: false, scrolled: false }" x-init="() => {
+        window.addEventListener('scroll', () => {
+            scrolled = window.scrollY > 0;
+        });
+    }" :class="{ 'shadow-md': scrolled }"
+        class="w-10/12 lg:w-8/12 mx-auto font-serif text-xs sm:text-sm md:text-base fixed top-0 bg-primary z-50 transition-shadow duration-300">
+        <div class="w-full flex justify-between py-4 md:items-center">
+            <div class="md:flex ml-5 items-center ">
+                <a href="index.html" class="md:mr-8 lg:mr-10 font-semibold lg:text-lg">Lan<span
+                        class="text-blue-700">do</span></a>
+                <nav class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
+                    <a class="mx-4" href="index.html">Home</a>
+                    <a class="mx-3" href="pricing.html">Pricing</a>
+                    <a class="mx-4" href="aboutus.html">About us</a>
+                    <a class="mx-4" href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="md:flex md:items-center mr-5">
+                <a href="login.html"
+                    class=" mr-2 md:mr-0 text-white bg-blue-700 md:text-black md:bg-transparent p-2 px-4 rounded-lg">Log
+                    in
+                </a>
+                <a href="signup.html"
+                    class="hidden md:block mr-2 md:mr-0 text-white bg-blue-700 rounded-lg p-2 px-4 ml-3">Sign up</a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4 md:w-6 md:h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="md:hidden  flex-col flex-grow hidden">
+            <a class="ml-5 py-2 " href="index.html">Home</a>
+            <a class="ml-5 py-2" href="pricing.html">Pricing</a>
+            <a class="ml-5 py-2" href="aboutus.html">About us</a>
+            <a class="ml-5 py-2" href="contact.html">Contact</a>
+        </nav>
+    </nav>
+
+    <div class="w-full md:h-[720px] h-auto mx-auto flex items-center pt-24 pb-12 md:pt-0 md:pb-0 md:mt-24">
+        <div class="w-full h-auto mx-auto font-sans rounded-xl grid grid-cols-1 md:grid-cols-2 p-5 items-center">
+            <div class="w-full items-center hidden md:block">
+                <img src="./Images/4.png" class="w-full h-full object-center mx-auto" alt="...">
+            </div>
+            <div class="">
+                <h2 class="font-serif text-2xl xl:text-4xl font-semibold  text-blue-gray-900 mb-4">
+                    Contact Us</h2>
+                <p class="font-sans text-base leading-relaxed text-inherit mb-8 font-normal !text-gray-500">
+                    Explore the future with us. Feel free to get in touch.</p>
+                <form action="">
+                    <label for="">Name</label><br>
+                    <input type="text" placeholder="Daniel Peter" class="w-full p-2 focus:outline-none"><br><br>
+                    <label for="">Email</label><br>
+                    <input type="email" placeholder="name@gmail.com" class="w-full p-2 focus:outline-none"><br><br>
+                    <label for="">Message</label><br>
+                    <textarea name="" id="" cols="10" class="w-full p-2 focus:outline-none"></textarea>
+                    <button class="bg-blue-700 p-2 w-full rounded-md text-white mt-2 md:mt-4">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="w-full h-auto md:flex my-5 md:my-10">
+            <div class="w-full md:w-4/12 ">
+                <article>
+                    <a href="index.html"
+                        class="md:mr-8 lg:mr-10 font-semibold font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">Lan<span
+                            class="text-blue-700">do</span></a>
+                    <p class="text-xs md:text-sm font-mono">2021 &copy; Lando <br> All rights reserved.</p>
+                </article>
+            </div>
+            <div class="w-full md:w-8/12 grid grid-cols-3 mt-5 md:mt-0  text-xs sm:text-sm">
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="#Facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#Instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#Twitter">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#Linkedin">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <ul class="space-y-2 md:space-y-4 font-serif">
+                        <li>
+                            <a href="#privacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#termsofservice">Terms Of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
