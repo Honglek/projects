@@ -1,5 +1,7 @@
 #
 
-#01 : https://honglek.github.io/webpage/01/
+#01 : [https://honglek.github.io/static-website/03/](https://honglek.github.io/static-website/03/)
 
-#02 : https://honglek.github.io/webpage/02/
+#02 : [https://honglek.github.io/static-website/02/](https://honglek.github.io/static-website/02/)
+
+#03 : https://honglek.github.io/static-website/03/
